@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SARM Security | IT Audit, ISO/IEC 27001 Compliance &amp; Penetration Testing | Marsellino Nasry Mounir</title>
+  <meta name="description" content="Independent IT audit, ISO/IEC 27001 and regulatory compliance, and penetration testing from Marsellino Nasry Mounir, Senior IT Auditor and ISO/IEC 27001 Lead Auditor. Book a free 30-minute consultation.">
+  <meta name="author" content="Marsellino Nasry Mounir">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#06101C">
+  <meta name="color-scheme" content="dark">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src https://formspree.io; form-action https://formspree.io; base-uri 'self'; object-src 'none'">
+  <link rel="canonical" href="https://marsellino-nasry.github.io/">
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SARM Security">
+  <meta property="og:title" content="SARM Security | IT Audit, ISO/IEC 27001 Compliance &amp; Penetration Testing">
+  <meta property="og:description" content="Security that passes the audit and survives the attack. ITGC audit, ISO/IEC 27001 readiness, regulatory compliance and penetration testing, delivered by Marsellino Nasry Mounir.">
+  <meta property="og:url" content="https://marsellino-nasry.github.io/">
+  <meta property="og:image" content="https://marsellino-nasry.github.io/assets/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Marsellino Nasry Mounir, Senior IT Auditor and cybersecurity specialist, with the SARM Security logo">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SARM Security | IT Audit, Compliance &amp; Offensive Security">
+  <meta name="twitter:description" content="Security that passes the audit and survives the attack.">
+  <meta name="twitter:image" content="https://marsellino-nasry.github.io/assets/images/og-image.png">
+
+  <!-- Icons -->
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preload" href="assets/fonts/archivo-variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://marsellino-nasry.github.io/#person",
+        "name": "Marsellino Nasry Mounir",
+        "alternateName": "Marsellino Nasry",
+        "jobTitle": "Senior IT Auditor",
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Modern Academy for Computer Science" },
+        "url": "https://marsellino-nasry.github.io/",
+        "image": "https://marsellino-nasry.github.io/assets/images/profile.jpg",
+        "email": "mailto:marsellino.nasry@gmail.com",
+        "sameAs": [
+          "https://www.linkedin.com/in/marsellino-nasry/",
+          "https://github.com/Marsellino-Nasry",
+          "https://tryhackme.com/p/Marsellino",
+          "https://linktr.ee/Marsellino.Nasry"
+        ],
+        "knowsAbout": ["IT General Controls", "IT audit", "ISO/IEC 27001", "Penetration testing", "Red teaming", "IT risk management", "COBIT 2019", "NIST Cybersecurity Framework", "PCI DSS", "MITRE ATT&CK"]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://marsellino-nasry.github.io/#service",
+        "name": "SARM Security",
+        "url": "https://marsellino-nasry.github.io/",
+        "logo": "https://marsellino-nasry.github.io/assets/images/sarm-logo.svg",
+        "image": "https://marsellino-nasry.github.io/assets/images/og-image.png",
+        "description": "Independent IT audit, compliance and offensive security services.",
+        "founder": { "@id": "https://marsellino-nasry.github.io/#person" },
+        "email": "marsellino.nasry@gmail.com",
+        "telephone": "+201019392651",
+        "areaServed": "Egypt",
+        "address": { "@type": "PostalAddress", "addressCountry": "EG" },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Security, IT audit and compliance services",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "IT General Controls (ITGC) audit and IT audit readiness" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "ISO/IEC 27001:2022 gap assessment and certification readiness" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Regulatory compliance: CBE Cybersecurity Framework, Egypt PDPL, PCI DSS" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Web, API, network and Active Directory penetration testing" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Red team and adversary emulation" } }
+          ]
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Icon sprite: referenced with <use>, never rendered on its own -->
+  <svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="g-mark" x1="0" y1="169" x2="0" y2="0" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#12808A"/><stop offset="0.55" stop-color="#36D1BE"/><stop offset="1" stop-color="#7AD3F5"/>
+      </linearGradient>
+      <symbol id="i-mark" viewBox="-2 -2 104 173">
+        <g fill="url(#g-mark)" stroke="url(#g-mark)" stroke-width="2.4" stroke-linejoin="round">
+          <path d="M0 39 L50 0 L100 39 L100 73 L50 34 L0 73 Z"/>
+          <path d="M0 87 L50 48 L100 87 L100 121 L50 82 L0 121 Z"/>
+          <path d="M0 135 L50 96 L100 135 L100 169 L50 130 L0 169 Z"/>
+        </g>
+      </symbol>
+      <symbol id="i-chevron" viewBox="0 0 100 74"><path d="M0 39 L50 0 L100 39 L100 73 L50 34 L0 73 Z" fill="currentColor"/></symbol>
+      <symbol id="i-external" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"/><path d="M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></g></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 7l8.5 6 8.5-6"/></g></symbol>
+      <symbol id="i-briefcase" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/><path d="M3 13h18"/></g></symbol>
+      <symbol id="i-code" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5"/><path d="M16 7l5 5-5 5"/><path d="M14 4l-4 16"/></g></symbol>
+      <symbol id="i-target" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4" fill="currentColor"/></g></symbol>
+      <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20.5 12a8.5 8.5 0 0 1-12.4 7.6L4 20.5l1-3.9A8.5 8.5 0 1 1 20.5 12z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+      <symbol id="i-link" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></g></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></g></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12"/><path d="M18 6L6 18"/></g></symbol>
+      <symbol id="i-lock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></g></symbol>
+      <symbol id="i-up" viewBox="0 0 24 24"><path d="M6 15l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-audit" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3.5h6v3H9z"/><path d="M15 5h2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2"/><path d="M8.5 13.5l2.5 2.5 4.5-5"/></g></symbol>
+      <symbol id="i-compliance" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.4-7.5 9.8-4.3-1.4-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.6 12.2l2.4 2.4 4.4-4.8"/></g></symbol>
+      <symbol id="i-crosshair" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="7.5"/><path d="M12 2v4.5M12 17.5V22M2 12h4.5M17.5 12H22"/><circle cx="12" cy="12" r="1.6" fill="currentColor" stroke="none"/></g></symbol>
+      <symbol id="i-lens" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="8.8" cy="12" r="6"/><circle cx="15.2" cy="12" r="6"/></g></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></g></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11"/><path d="M7 10l5 5 5-5"/><path d="M5 20h14"/></g></symbol>
+      <symbol id="i-bank" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-5 9 5"/><path d="M5.5 9.5v8M10 9.5v8M14 9.5v8M18.5 9.5v8"/><path d="M3 20.5h18"/></g></symbol>
+      <symbol id="i-energy" viewBox="0 0 24 24"><path d="M13.5 2.5L5 13.5h6.2l-1 8 8.3-11h-6.2z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+      <symbol id="i-building" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M9 7.5h1.5M13.5 7.5H15M9 11.5h1.5M13.5 11.5H15M9 15.5h1.5M13.5 15.5H15"/></g></symbol>
+      <symbol id="i-growth" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></g></symbol>
+      <symbol id="i-repeat" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5a8 8 0 0 1 14.2-5L20 8.5"/><path d="M20 3.5v5h-5"/><path d="M20 12.5a8 8 0 0 1-14.2 5L4 15.5"/><path d="M4 20.5v-5h5"/></g></symbol>
+      <symbol id="i-flag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4"/><path d="M5 4.5h11.5l-2.2 4 2.2 4H5"/></g></symbol>
+      <symbol id="i-file" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></g></symbol>
+      <symbol id="i-user" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4.5 20.5a7.5 7.5 0 0 1 15 0"/></g></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14"/><path d="M5 12h14"/></g></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container site-header__inner">
+      <a class="brand" href="#top" aria-label="SARM Security, back to top">
+        <svg class="brand__mark" aria-hidden="true"><use href="#i-mark"/></svg>
+        <span class="brand__word">SARM <span class="brand__sub">Security</span></span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+          <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
+          <span class="visually-hidden">Open menu</span>
+        </button>
+        <ul class="site-nav__list" id="site-menu">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#dual-lens">Why SARM</a></li>
+          <li><a href="#approach">Approach</a></li>
+          <li><a href="#industries">Industries</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li class="site-nav__cta"><a class="btn btn--small btn--primary" href="#contact">Book a consultation</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__grid-bg" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>IT audit &middot; Compliance &middot; Offensive security</p>
+          <h1 class="hero__title" id="hero-title">Security that passes the audit <span class="hero__accent">and survives the attack.</span></h1>
+          <p class="hero__lead">I help banks, energy companies and growing businesses get audit-ready, achieve ISO/IEC&nbsp;27001, meet regulatory requirements, and close the gaps a real attacker would use, with findings your board understands and your IT team can act on.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="#contact">Book a free consultation<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn--ghost btn--lg" href="#services">Explore services</a>
+          </div>
+          <p class="hero__by">
+            <span class="hero__by-name">Marsellino Nasry Mounir</span>
+            <span class="hero__by-role">Senior IT Auditor &middot; ISO/IEC 27001 Lead Auditor &middot; Offensive security specialist</span>
+          </p>
+        </div>
+
+        <figure class="portrait">
+          <svg class="portrait__chevrons" viewBox="0 0 100 72" aria-hidden="true" focusable="false">
+            <path class="portrait__chev portrait__chev--top" d="M0 39 L50 0 L100 39 L100 49 L50 10 L0 49 Z"/>
+            <path class="portrait__chev portrait__chev--mid" d="M0 55 L50 16 L100 55 L100 65 L50 26 L0 65 Z"/>
+          </svg>
+          <div class="portrait__frame">
+            <picture>
+              <source type="image/webp" srcset="assets/images/profile-480.webp 480w, assets/images/profile.webp 820w" sizes="(min-width: 960px) 400px, 78vw">
+              <img src="assets/images/profile.jpg" width="820" height="1025" alt="Portrait of Marsellino Nasry Mounir in a dark suit and tie" fetchpriority="high" decoding="async">
+            </picture>
+          </div>
+          <svg class="portrait__rim" viewBox="0 0 100 72" aria-hidden="true" focusable="false">
+            <path d="M0 71 L50 32 L100 71" fill="none" vector-effect="non-scaling-stroke"/>
+          </svg>
+          <figcaption class="portrait__badge">
+            <svg class="icon" aria-hidden="true"><use href="#i-compliance"/></svg>
+            <span><strong>ISO/IEC 27001</strong> Lead Auditor</span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="container">
+        <dl class="proof">
+          <div class="proof__item"><dt>Audits delivered</dt><dd><span class="proof__num">30+</span>ITGC, information security and cybersecurity</dd></div>
+          <div class="proof__item"><dt>Experience</dt><dd><span class="proof__num">5+ yrs</span>Banking, petroleum and corporate sectors</dd></div>
+          <div class="proof__item"><dt>Controls mapped</dt><dd><span class="proof__num">93</span>ISO/IEC 27001 Annex A controls in my own platform</dd></div>
+          <div class="proof__item"><dt>Hands-on skill</dt><dd><span class="proof__num">Top 1%</span>TryHackMe offensive security, worldwide</dd></div>
+        </dl>
+
+        <div class="frameworks" aria-labelledby="fw-title">
+          <p class="frameworks__label" id="fw-title">Frameworks and regulations I work with</p>
+          <ul class="frameworks__list">
+            <li>ISO/IEC 27001:2022</li><li>ISO/IEC 27002</li><li>COBIT 2019</li><li>COSO</li><li>NIST CSF</li><li>PCI DSS</li><li>CBE Cybersecurity Framework</li><li>Egypt PDPL (Law 151/2020)</li><li>MITRE ATT&amp;CK</li><li>OWASP</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CHALLENGES ============ -->
+    <section class="section section--alt" id="challenges" aria-labelledby="challenges-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="kicker">Sound familiar?</p>
+          <h2 class="section__title" id="challenges-title">The problems clients bring to me</h2>
+          <p class="section__lede">Most engagements start with one of these. If you recognise yours, we should talk.</p>
+        </header>
+
+        <ul class="challenges">
+          <li class="challenge" data-reveal>
+            <p class="challenge__q">&ldquo;Our external auditor keeps raising the same ITGC findings every year.&rdquo;</p>
+            <p class="challenge__a"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>Pre-audit ITGC review and a remediation plan that fixes the root cause, not the symptom.</p>
+          </li>
+          <li class="challenge" data-reveal>
+            <p class="challenge__q">&ldquo;A client, investor or tender is asking for ISO/IEC 27001.&rdquo;</p>
+            <p class="challenge__a"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>Gap assessment, ISMS build and certification readiness, step by step.</p>
+          </li>
+          <li class="challenge" data-reveal>
+            <p class="challenge__q">&ldquo;The regulator wants evidence we meet its cybersecurity requirements.&rdquo;</p>
+            <p class="challenge__a"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>Alignment to the CBE Cybersecurity Framework, Egypt's PDPL or PCI DSS, with evidence ready to show.</p>
+          </li>
+          <li class="challenge" data-reveal>
+            <p class="challenge__q">&ldquo;We've never seen our network the way an attacker would.&rdquo;</p>
+            <p class="challenge__a"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>Authorized penetration testing of web, API, network and Active Directory.</p>
+          </li>
+          <li class="challenge" data-reveal>
+            <p class="challenge__q">&ldquo;Our last pentest report was 200 pages of scanner output, and nothing changed.&rdquo;</p>
+            <p class="challenge__a"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>Findings ranked by business impact, mapped to controls, with clear owners.</p>
+          </li>
+          <li class="challenge" data-reveal>
+            <p class="challenge__q">&ldquo;Nobody owns security and compliance day to day.&rdquo;</p>
+            <p class="challenge__a"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>An advisory retainer: an experienced auditor and tester on call when you need one.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="kicker">Services</p>
+          <h2 class="section__title" id="services-title">Three services, one view of risk</h2>
+          <p class="section__lede">Pick one, or combine them. Each engagement has a defined scope, named deliverables and a clear end point.</p>
+        </header>
+
+        <div class="services">
+          <article class="service service--audit" aria-labelledby="svc-audit" data-reveal>
+            <div class="service__top">
+              <span class="service__icon" aria-hidden="true"><svg class="icon"><use href="#i-audit"/></svg></span>
+              <p class="service__num">01</p>
+            </div>
+            <h3 class="service__title" id="svc-audit">IT Audit &amp; Assurance</h3>
+            <p class="service__pitch">Independent assurance that your technology controls are designed well and actually work, before your external auditor or regulator tests them.</p>
+            <h4 class="service__label">What's included</h4>
+            <ul class="checks">
+              <li>IT General Controls audit: access, change, operations, BCP and DR</li>
+              <li>Pre-audit readiness review ahead of the financial statement audit</li>
+              <li>Risk and Control Matrix (RCM) design and review</li>
+              <li>Test of Design and Test of Operating Effectiveness</li>
+              <li>IT risk assessment and control maturity (COBIT 2019, COSO)</li>
+              <li>User access and segregation of duties review for SAP, Oracle, Dynamics 365, core banking and Entra ID</li>
+            </ul>
+            <h4 class="service__label">You receive</h4>
+            <p class="service__deliver">A tested RCM, working papers, and a risk-rated findings report with a management action plan.</p>
+            <a class="service__cta" href="#contact" data-service="IT audit / ITGC">Discuss an IT audit<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+
+          <article class="service service--grc" aria-labelledby="svc-grc" data-reveal>
+            <div class="service__top">
+              <span class="service__icon" aria-hidden="true"><svg class="icon"><use href="#i-compliance"/></svg></span>
+              <p class="service__num">02</p>
+            </div>
+            <h3 class="service__title" id="svc-grc">Compliance &amp; GRC</h3>
+            <p class="service__pitch">A clear, evidenced path to ISO/IEC&nbsp;27001 certification and the regulations that apply to your business.</p>
+            <h4 class="service__label">What's included</h4>
+            <ul class="checks">
+              <li>ISO/IEC 27001:2022 gap assessment against Clauses 4 to 10 and all 93 Annex A controls</li>
+              <li>ISMS build: scope, risk methodology, risk register, Statement of Applicability and policies</li>
+              <li>Internal ISMS audit (Clause 9.2) and management review support</li>
+              <li>Certification readiness for Stage 1 and Stage 2 audits</li>
+              <li>CBE Cybersecurity Framework and Egypt PDPL (Law 151/2020) readiness</li>
+              <li>PCI DSS readiness support and NIST CSF maturity assessment</li>
+            </ul>
+            <h4 class="service__label">You receive</h4>
+            <p class="service__deliver">A gap report with a prioritized roadmap, risk register, SoA, policy set and a readiness scorecard.</p>
+            <a class="service__cta" href="#contact" data-service="ISO/IEC 27001">Discuss compliance<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+
+          <article class="service service--off" aria-labelledby="svc-off" data-reveal>
+            <div class="service__top">
+              <span class="service__icon" aria-hidden="true"><svg class="icon"><use href="#i-crosshair"/></svg></span>
+              <p class="service__num">03</p>
+            </div>
+            <h3 class="service__title" id="svc-off">Offensive Security</h3>
+            <p class="service__pitch">Authorized, hands-on testing that shows what an attacker could actually reach, and exactly how to stop them.</p>
+            <h4 class="service__label">What's included</h4>
+            <ul class="checks">
+              <li>Web application and API penetration testing (OWASP)</li>
+              <li>External and internal network penetration testing</li>
+              <li>Active Directory security assessment and privilege escalation paths</li>
+              <li>Vulnerability assessment, prioritized with the CISA KEV catalog</li>
+              <li>Red team and adversary emulation mapped to MITRE ATT&amp;CK</li>
+              <li>Wireless testing and external attack surface and OSINT review</li>
+            </ul>
+            <h4 class="service__label">You receive</h4>
+            <p class="service__deliver">An executive summary, a technical report with proof-of-concept evidence, a prioritized fix plan, and a retest to confirm fixes hold.</p>
+            <a class="service__cta" href="#contact" data-service="Penetration testing">Discuss a penetration test<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DUAL LENS (DIFFERENTIATOR) ============ -->
+    <section class="section section--alt section--glow" id="dual-lens" aria-labelledby="lens-title">
+      <div class="container">
+        <div class="signature">
+          <div class="signature__intro">
+            <p class="kicker">Why SARM</p>
+            <h2 class="section__title" id="lens-title">The <span class="nowrap">Dual-Lens</span> Assessment</h2>
+            <p class="section__lede">Most providers send an auditor <em>or</em> a penetration tester. You get both in one person, and that changes what you learn.</p>
+            <div class="prose">
+              <p>In my signature engagement, every exploitable weakness I find is traced back to the control that should have stopped it, mapped to ISO/IEC&nbsp;27001, COBIT and your regulator's requirements, and fixed at the root rather than just patched.</p>
+              <p>Management gets an audit-grade risk picture. Your technical team gets reproducible evidence and a fix list they can start on the same week.</p>
+            </div>
+            <ul class="pillars">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-lens"/></svg><span><strong>Two views of every weakness:</strong> how it's attacked, and why controls missed it</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg><span><strong>Framework-mapped findings</strong> you can hand straight to your auditor</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-user"/></svg><span><strong>Senior hands on your project:</strong> you work with me directly, start to finish</span></li>
+            </ul>
+            <a class="btn btn--primary" href="#contact" data-service="Dual-Lens Assessment">Ask about a Dual-Lens Assessment<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+
+          <div class="signature__visuals">
+            <div class="lens" data-reveal>
+              <h3 class="lens__title">The same weakness, seen twice</h3>
+              <table class="lens__table">
+                <thead>
+                  <tr><th scope="col">Attacker's view</th><th scope="col">Auditor's view</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>A dormant admin account that still logs in.</td><td>Would joiner, mover, leaver and access review controls have removed it?</td></tr>
+                  <tr><td>A path from a standard user to domain admin.</td><td>Is privileged access restricted, segregated and monitored?</td></tr>
+                  <tr><td>A published CVE on an exposed service.</td><td>Does vulnerability management detect, rate and patch it within SLA?</td></tr>
+                  <tr><td>An unapproved change pushed to production.</td><td>Are changes approved, tested and deployed by someone other than the developer?</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <figure class="finding" data-reveal>
+              <div class="finding__bar">
+                <span class="finding__id">SARM-F-04</span>
+                <span class="sev sev--high">High</span>
+                <span class="finding__sample">Illustrative example</span>
+              </div>
+              <h3 class="finding__title">Former employee's account kept administrator rights</h3>
+              <dl class="finding__grid">
+                <div><dt>Attack path</dt><dd>The account could still sign in and was usable for lateral movement during testing.</dd></div>
+                <div><dt>Control failure</dt><dd>Leaver process did not remove access; quarterly privileged access review not performed.</dd></div>
+                <div><dt>Mapped to</dt><dd><span class="ref">ISO 27001 A.5.18</span> <span class="ref">A.8.2</span> <span class="ref">COBIT DSS05.04</span></dd></div>
+                <div><dt>Business impact</dt><dd>Domain compromise and access to financial systems; ITGC exception at year-end audit.</dd></div>
+                <div class="finding__wide"><dt>Fix</dt><dd>Disable now; link the HR leaver feed to access removal; evidence quarterly privileged access reviews. Owner: IT Infrastructure. Target: 30 days.</dd></div>
+              </dl>
+              <figcaption class="finding__cap"><svg class="icon icon--inline" aria-hidden="true"><use href="#i-lock"/></svg>Sample format only. Client names, evidence and findings are never published.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ APPROACH ============ -->
+    <section class="section" id="approach" aria-labelledby="approach-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="kicker">Approach</p>
+          <h2 class="section__title" id="approach-title">How an engagement works</h2>
+          <p class="section__lede">A predictable process with no surprises. The three arrows in the SARM mark stand for its core stages: Assess, Validate, Assure.</p>
+        </header>
+
+        <ol class="steps">
+          <li class="step" data-reveal>
+            <p class="step__num">01</p>
+            <h3 class="step__title">Scope</h3>
+            <p>A free 30-minute call to understand your goals, deadline and environment. You then receive a written proposal with scope, deliverables, timeline and fee. NDA signed before any sensitive detail is shared.</p>
+          </li>
+          <li class="step step--mark" data-reveal>
+            <svg class="step__chev" aria-hidden="true"><use href="#i-chevron"/></svg>
+            <p class="step__num">02</p>
+            <h3 class="step__title">Assess</h3>
+            <p>Understand the business and evaluate control design against ISO/IEC&nbsp;27001, COBIT, COSO or your regulator's framework. The result is a gap view ranked by risk.</p>
+          </li>
+          <li class="step step--mark" data-reveal>
+            <svg class="step__chev" aria-hidden="true"><use href="#i-chevron"/></svg>
+            <p class="step__num">03</p>
+            <h3 class="step__title">Validate</h3>
+            <p>Test how controls perform in practice: operating-effectiveness sampling, vulnerability assessment, and penetration testing under signed rules of engagement.</p>
+          </li>
+          <li class="step step--mark" data-reveal>
+            <svg class="step__chev" aria-hidden="true"><use href="#i-chevron"/></svg>
+            <p class="step__num">04</p>
+            <h3 class="step__title">Assure</h3>
+            <p>An executive briefing for management and a technical walkthrough for IT. We agree remediation with control owners, and I retest to confirm the fixes hold.</p>
+          </li>
+        </ol>
+
+        <ul class="commitments">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg><span><strong>Confidential by default.</strong> NDA as standard; client names and findings are never published.</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg><span><strong>Authorized testing only.</strong> Written authorization and rules of engagement before any test.</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-briefcase"/></svg><span><strong>Business language.</strong> Risk explained in terms of money, operations and regulation.</span></li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span><strong>Fixes verified.</strong> Engagements end with confirmed remediation, not just a report.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ ENGAGEMENT MODELS ============ -->
+    <section class="section section--alt" id="engage" aria-labelledby="engage-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="kicker">Ways to work together</p>
+          <h2 class="section__title" id="engage-title">Engagement models</h2>
+          <p class="section__lede">Choose the shape that fits your deadline and budget. Every engagement starts with a free scoping call and a written proposal before any work begins.</p>
+        </header>
+
+        <div class="models">
+          <article class="model" data-reveal>
+            <span class="model__icon" aria-hidden="true"><svg class="icon"><use href="#i-target"/></svg></span>
+            <h3 class="model__title">Fixed-scope assessment</h3>
+            <p class="model__desc">One defined project with one clear deliverable: an ITGC audit, an ISO/IEC&nbsp;27001 gap assessment, or a penetration test.</p>
+            <p class="model__best"><span>Best for</span>A specific question, audit date or client request.</p>
+            <a class="text-link" href="#contact" data-service="Not sure yet">Request a proposal</a>
+          </article>
+          <article class="model model--featured" data-reveal>
+            <p class="model__flag">Most requested</p>
+            <span class="model__icon" aria-hidden="true"><svg class="icon"><use href="#i-flag"/></svg></span>
+            <h3 class="model__title">Readiness programme</h3>
+            <p class="model__desc">I guide you from gap assessment to audit or certification readiness over several months, with agreed milestones and progress reporting.</p>
+            <p class="model__best"><span>Best for</span>ISO/IEC&nbsp;27001 certification and regulatory deadlines.</p>
+            <a class="btn btn--primary btn--small" href="#contact" data-service="ISO/IEC 27001">Plan your readiness programme</a>
+          </article>
+          <article class="model" data-reveal>
+            <span class="model__icon" aria-hidden="true"><svg class="icon"><use href="#i-repeat"/></svg></span>
+            <h3 class="model__title">Advisory retainer</h3>
+            <p class="model__desc">Ongoing support: control reviews, policy updates, vendor security reviews, periodic vulnerability assessments and help when your auditors arrive.</p>
+            <p class="model__best"><span>Best for</span>Teams without a dedicated security or GRC lead.</p>
+            <a class="text-link" href="#contact" data-service="Advisory retainer">Discuss a retainer</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INDUSTRIES ============ -->
+    <section class="section" id="industries" aria-labelledby="industries-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="kicker">Industries</p>
+          <h2 class="section__title" id="industries-title">Who I work with</h2>
+          <p class="section__lede">Hands-on experience in regulated, high-stakes environments, and the systems they run on.</p>
+        </header>
+
+        <ul class="sectors">
+          <li class="sector" data-reveal>
+            <svg class="icon sector__icon" aria-hidden="true"><use href="#i-bank"/></svg>
+            <h3 class="sector__title">Banking and financial services</h3>
+            <p>Core banking ITGC, privileged access, CBE Cybersecurity Framework alignment and PCI DSS readiness.</p>
+          </li>
+          <li class="sector" data-reveal>
+            <svg class="icon sector__icon" aria-hidden="true"><use href="#i-energy"/></svg>
+            <h3 class="sector__title">Petroleum and energy</h3>
+            <p>ERP environments on SAP and Oracle, IT operations, business continuity and disaster recovery.</p>
+          </li>
+          <li class="sector" data-reveal>
+            <svg class="icon sector__icon" aria-hidden="true"><use href="#i-building"/></svg>
+            <h3 class="sector__title">Corporate and enterprise</h3>
+            <p>Microsoft Dynamics 365, Entra ID and Active Directory, change management and segregation of duties.</p>
+          </li>
+          <li class="sector" data-reveal>
+            <svg class="icon sector__icon" aria-hidden="true"><use href="#i-growth"/></svg>
+            <h3 class="sector__title">Growing companies and tech providers</h3>
+            <p>ISO/IEC&nbsp;27001 and a credible pentest report to win enterprise and banking clients, plus PDPL readiness.</p>
+          </li>
+        </ul>
+
+        <div class="systems" aria-labelledby="sys-title">
+          <p class="systems__label" id="sys-title">Environments audited</p>
+          <ul class="tags">
+            <li>Core banking</li><li>SAP</li><li>Oracle</li><li>Microsoft Dynamics 365</li><li>Microsoft Entra ID</li><li>Active Directory</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section section--alt" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about">
+          <div class="about__main">
+            <p class="kicker">About</p>
+            <h2 class="section__title" id="about-title">Who you'll work with</h2>
+            <div class="prose about__bio">
+              <p>I'm Marsellino Nasry Mounir, a Senior IT Auditor with more than five years of experience across banking, petroleum and corporate environments, and the founder of SARM Security.</p>
+              <p>On the assurance side, I deliver IT General Controls audits, IT risk assessments, Test of Design and Operating Effectiveness procedures and Risk and Control Matrices, aligned with ISO/IEC&nbsp;27001, COBIT 2019, COSO, NIST and PCI DSS.</p>
+              <p>On the offensive side, I practise web, network and Active Directory penetration testing, red team techniques and responsible vulnerability research through bug bounty programmes. That hands-on work, which places me in the top 1% of TryHackMe users worldwide, shapes how I audit: findings are grounded in how weaknesses are actually exploited, and recommendations are ranked by business impact.</p>
+            </div>
+            <a class="btn btn--ghost" href="assets/docs/SARM-Security-Capability-Statement.pdf" download><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Download capability statement (PDF)</a>
+          </div>
+
+          <ol class="timeline">
+            <li class="timeline__item timeline__item--current">
+              <p class="timeline__when"><time datetime="2024-08">Aug 2024</time> to present</p>
+              <h3 class="timeline__role">Senior IT Auditor</h3>
+              <p class="timeline__org">BDO Khaled &amp; Co. (BDO Egypt), Information Technology Audit</p>
+              <ul class="ticks">
+                <li>More than 30 ITGC, information security and cybersecurity audits delivered.</li>
+                <li>Clients in banking and financial services, petroleum and energy, and the corporate sector.</li>
+                <li>Test of Design and Operating Effectiveness, RCM development, COBIT 2019 and COSO maturity reviews.</li>
+              </ul>
+            </li>
+            <li class="timeline__item">
+              <p class="timeline__when">Independent practice</p>
+              <h3 class="timeline__role">Offensive security and bug bounty</h3>
+              <p class="timeline__org">Penetration testing, red teaming and responsible disclosure</p>
+              <ul class="ticks">
+                <li>Vulnerabilities researched and reported under each programme's rules of engagement.</li>
+                <li>Built the SARM Security Arsenal for reconnaissance, vulnerability correlation and CVE intelligence.</li>
+              </ul>
+            </li>
+            <li class="timeline__item">
+              <p class="timeline__when">Continuous training</p>
+              <h3 class="timeline__role">TryHackMe: top 1% worldwide</h3>
+              <p class="timeline__org">Advent of Cyber completed in 2023, 2024 and 2025</p>
+            </li>
+            <li class="timeline__item">
+              <p class="timeline__when">Education</p>
+              <h3 class="timeline__role">Bachelor of Computer Science</h3>
+              <p class="timeline__org">Modern Academy for Computer Science</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CREDENTIALS ============ -->
+    <section class="section" id="credentials" aria-labelledby="credentials-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="kicker">Credentials</p>
+          <h2 class="section__title" id="credentials-title">Certified on both sides of the work</h2>
+          <p class="section__lede">Grouped by type, so it's clear which are certifications and which are diplomas, training or course certificates.</p>
+        </header>
+
+        <div class="creds">
+          <section class="creds__group creds__group--primary" aria-labelledby="cg-cert">
+            <h3 class="creds__title" id="cg-cert">Certifications</h3>
+            <ul class="creds__list">
+              <li><span class="creds__name">ISO/IEC 27001 Lead Auditor</span><span class="creds__issuer">Mastermind Assurance</span><span class="domain-tag domain-tag--grc">Governance</span></li>
+              <li><span class="creds__name">ISO/IEC 27001 Information Security Associate</span><span class="creds__issuer">SkillFront</span><span class="domain-tag domain-tag--grc">Governance</span></li>
+              <li><span class="creds__name">Certified in Cybersecurity (CC)</span><span class="creds__issuer">ISC²</span><span class="domain-tag domain-tag--cyber">Cybersecurity</span></li>
+              <li><span class="creds__name">Fortinet Certified Associate in Cybersecurity</span><span class="creds__issuer">Fortinet</span><span class="domain-tag domain-tag--cyber">Cybersecurity</span></li>
+              <li><span class="creds__name">CAISR, Certified AI Security and Risk</span><span class="creds__issuer">Red Team Leaders</span><span class="domain-tag domain-tag--cyber">AI security</span></li>
+            </ul>
+          </section>
+
+          <section class="creds__group" aria-labelledby="cg-train">
+            <h3 class="creds__title" id="cg-train">Diplomas and training</h3>
+            <ul class="creds__list">
+              <li><span class="creds__name">CISSP Diploma</span><span class="creds__issuer">Diploma, 2019</span><span class="domain-tag domain-tag--cyber">Cybersecurity</span></li>
+              <li><span class="creds__name">PenTest+</span><span class="creds__issuer">Training, Arab Security</span><span class="domain-tag domain-tag--off">Offensive</span></li>
+              <li><span class="creds__name">eJPT</span><span class="creds__issuer">Training, Netriders Academy</span><span class="domain-tag domain-tag--off">Offensive</span></li>
+              <li><span class="creds__name">Security+</span><span class="creds__issuer">Training</span><span class="domain-tag domain-tag--cyber">Cybersecurity</span></li>
+              <li><span class="creds__name">CCNA</span><span class="creds__issuer">Training</span><span class="domain-tag domain-tag--cyber">Networking</span></li>
+              <li><span class="creds__name">CCNP Security</span><span class="creds__issuer">Training</span><span class="domain-tag domain-tag--cyber">Networking</span></li>
+            </ul>
+          </section>
+
+          <section class="creds__group" aria-labelledby="cg-course">
+            <h3 class="creds__title" id="cg-course">Course certificates</h3>
+            <ul class="creds__list">
+              <li><span class="creds__name">Google Cybersecurity Professional Certificate</span><span class="creds__issuer">Google</span><span class="domain-tag domain-tag--cyber">Cybersecurity</span></li>
+              <li><span class="creds__name">API Penetration Testing</span><span class="creds__issuer">APIsec University</span><span class="domain-tag domain-tag--off">Offensive</span></li>
+              <li><span class="creds__name">Wireless Network Penetration Testing</span><span class="creds__issuer">MaharaTech</span><span class="domain-tag domain-tag--off">Offensive</span></li>
+              <li><span class="creds__name">Advent of Cyber</span><span class="creds__issuer">TryHackMe, 2023, 2024 and 2025</span><span class="domain-tag domain-tag--off">Offensive</span></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WORK / PROOF ============ -->
+    <section class="section section--alt" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="kicker">Proof of work</p>
+          <h2 class="section__title" id="work-title">Tools I built, used on your engagement</h2>
+          <p class="section__lede">I don't just run other people's scanners. These are the platforms behind faster, more consistent assessments.</p>
+        </header>
+
+        <article class="project project--featured" aria-labelledby="p-isms">
+          <div class="project__visual">
+            <figure class="annex">
+              <div class="annex__clauses" aria-hidden="true">
+                <span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+              </div>
+              <p class="annex__clauses-label">Clauses 4 to 10: management system requirements</p>
+              <div class="annex__themes">
+                <div class="annex__theme annex__theme--org"><p class="annex__label"><span>Organizational <span class="annex__ref">A.5</span></span><span class="annex__n">37</span></p><div class="annex__cells" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
+                <div class="annex__theme annex__theme--people"><p class="annex__label"><span>People <span class="annex__ref">A.6</span></span><span class="annex__n">8</span></p><div class="annex__cells" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
+                <div class="annex__theme annex__theme--phys"><p class="annex__label"><span>Physical <span class="annex__ref">A.7</span></span><span class="annex__n">14</span></p><div class="annex__cells" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
+                <div class="annex__theme annex__theme--tech"><p class="annex__label"><span>Technological <span class="annex__ref">A.8</span></span><span class="annex__n">34</span></p><div class="annex__cells" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div>
+              </div>
+              <figcaption class="annex__caption">ISO/IEC 27001:2022 Annex A: 93 controls in four themes, each assessed in the platform.</figcaption>
+            </figure>
+          </div>
+          <div class="project__content">
+            <p class="project__tag">Compliance platform</p>
+            <h3 class="project__title" id="p-isms">ISMS Assurance Platform for ISO/IEC 27001:2022</h3>
+            <p class="project__desc">The platform I designed and built to run ISO/IEC 27001 audit, risk and certification-readiness work in one place. For clients, it means a structured, evidence-backed path to certification instead of scattered spreadsheets.</p>
+            <ul class="ticks ticks--two">
+              <li>Clauses 4 to 10 conformity, with evidence per requirement</li>
+              <li>All 93 Annex A controls with ISO/IEC 27002 attributes</li>
+              <li>5&times;5 risk register, residual risk and heat map</li>
+              <li>Statement of Applicability with justifications</li>
+              <li>Nonconformity and corrective action tracking</li>
+              <li>Audit report and SoA export to PDF and Excel</li>
+            </ul>
+            <div class="project__actions">
+              <a class="btn btn--primary" href="https://marsellino-nasry.github.io/iso27001v.2-platform/" target="_blank" rel="noopener noreferrer">Open the live platform<svg class="icon" aria-hidden="true"><use href="#i-external"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a>
+              <a class="btn btn--ghost" href="https://github.com/Marsellino-Nasry/iso27001v.2-platform" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg>View on GitHub<span class="visually-hidden"> (opens in a new tab)</span></a>
+            </div>
+            <p class="project__fine">Version 2.0, open source under the MIT licence. Not affiliated with or endorsed by ISO or IEC; a support tool, not a certification engine.</p>
+          </div>
+        </article>
+
+        <article class="project project--arsenal" aria-labelledby="p-arsenal">
+          <div class="project__head">
+            <div>
+              <p class="project__tag">Offensive toolkit</p>
+              <h3 class="project__title" id="p-arsenal">SARM Security Arsenal</h3>
+              <p class="project__desc">My in-house toolkit for reconnaissance, vulnerability analysis and threat intelligence. It turns raw scan data into a remediation plan ranked by real-world exploitation risk. Used only against systems I'm authorized to test.</p>
+            </div>
+            <dl class="project__meta">
+              <div><dt>Built with</dt><dd>Python, Bash, Nmap and Nuclei output, NVD and CISA KEV data</dd></div>
+              <div><dt>Status</dt><dd>Private toolkit; walkthrough on request</dd></div>
+            </dl>
+          </div>
+          <ol class="arsenal">
+            <li class="arsenal__item">
+              <h4>VAMPIRE-X</h4>
+              <p class="arsenal__role">Vulnerability analysis and management</p>
+              <p>Correlates Nmap and Nuclei results with the CISA Known Exploited Vulnerabilities catalog and produces a risk-ranked remediation plan.</p>
+              <pre class="cli"><code><span class="cli__prompt" aria-hidden="true">$ </span>./vampirex.py 10.10.1.0/24 -s vuln</code></pre>
+            </li>
+            <li class="arsenal__item">
+              <h4>SARM-Security</h4>
+              <p class="arsenal__role">Reconnaissance and attack surface</p>
+              <p>Discovers subdomains and technologies, flags exposed data, and maps your external attack surface.</p>
+              <pre class="cli"><code><span class="cli__prompt" aria-hidden="true">$ </span>./sarm-security -d example.com</code></pre>
+            </li>
+            <li class="arsenal__item">
+              <h4>SARM-CVE-DB</h4>
+              <p class="arsenal__role">CVE and threat intelligence</p>
+              <p>Aggregates NVD and CISA feeds into one searchable hub for fast lookups and quicker risk decisions.</p>
+              <pre class="cli"><code><span class="cli__prompt" aria-hidden="true">$ </span>./sarm-cvedb --query Log4j</code></pre>
+            </li>
+          </ol>
+        </article>
+
+        <div class="toolset" aria-labelledby="toolset-title">
+          <h3 class="toolset__title" id="toolset-title">Industry-standard toolset</h3>
+          <dl class="toolset__grid">
+            <div><dt>Network</dt><dd>Nmap, Wireshark</dd></div>
+            <div><dt>Vulnerability assessment</dt><dd>Nessus, OpenVAS, Nuclei, Nikto</dd></div>
+            <div><dt>Web and API</dt><dd>Burp Suite, OWASP ZAP, sqlmap</dd></div>
+            <div><dt>Active Directory and red team</dt><dd>BloodHound, SharpHound, Mimikatz, Rubeus, Impacket, Metasploit</dd></div>
+            <div><dt>Threat intel and recon</dt><dd>VirusTotal, URLScan.io, ANY.RUN, DNSDumpster, crt.sh, Have I Been Pwned</dd></div>
+            <div><dt>Wireless and automation</dt><dd>Aircrack-ng, Python, Bash</dd></div>
+          </dl>
+          <a class="text-link" href="https://github.com/Marsellino-Nasry" target="_blank" rel="noopener noreferrer">See all repositories on GitHub<svg class="icon icon--inline" aria-hidden="true"><use href="#i-external"/></svg><span class="visually-hidden"> (opens in a new tab)</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container faq">
+        <header class="section__head faq__head">
+          <p class="kicker">FAQ</p>
+          <h2 class="section__title" id="faq-title">Questions clients ask first</h2>
+          <p class="section__lede">Don't see yours? Ask it in the form below. A straight answer costs nothing.</p>
+        </header>
+
+        <div class="faq__list">
+          <details class="qa">
+            <summary>Can you certify us for ISO/IEC&nbsp;27001?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+            <p>No consultant should. Certificates are issued by accredited certification bodies, and independence rules stop the person who helps you implement from certifying you. What I do is get you ready: gap assessment, ISMS build, internal audit and Stage 1 and Stage 2 preparation, with support while the certification audit runs.</p>
+          </details>
+          <details class="qa">
+            <summary>Is penetration testing safe for our live systems?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+            <p>Testing only starts after written authorization and agreed rules of engagement: scope, testing windows, emergency contacts and any systems that are off-limits. Higher-risk tests can be scheduled out of hours or run against a staging environment.</p>
+          </details>
+          <details class="qa">
+            <summary>How do you handle our confidential information?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+            <p>I sign an NDA before you share sensitive detail, collect only the evidence the engagement needs, and agree with you how it is returned or deleted at the end. Client names and findings are never published or used in marketing.</p>
+          </details>
+          <details class="qa">
+            <summary>How much does an engagement cost?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+            <p>It depends on scope: the number of systems, applications, locations and frameworks involved. After a free scoping call you receive a written proposal with scope, deliverables, timeline and fee, so you know the full cost before any work begins.</p>
+          </details>
+          <details class="qa">
+            <summary>Do you work remotely or on-site?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+            <p>Both. Most audit and compliance work runs well remotely. Internal network and Active Directory testing can be done on-site or over a secure connection you provide.</p>
+          </details>
+          <details class="qa">
+            <summary>What do you need from us to get started?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+            <p>A short call and a named contact. For audits and compliance: your policies, a system inventory and the people who own the evidence. For testing: a signed authorization and the list of targets in scope.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section--contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact">
+        <div class="contact__intro">
+          <p class="kicker">Get started</p>
+          <h2 class="section__title" id="contact-title">Book a free 30-minute consultation</h2>
+          <p class="section__lede">Tell me what's driving the need: an audit date, a client request, a regulator, or a worry. I'll reply personally to arrange a call.</p>
+
+          <ol class="next">
+            <li><span class="next__n">1</span><span><strong>Send a short message</strong> using the form or any channel below.</span></li>
+            <li><span class="next__n">2</span><span><strong>We talk for 30 minutes</strong> about your goals, scope and timeline. No cost, no obligation.</span></li>
+            <li><span class="next__n">3</span><span><strong>You get a written proposal</strong> with scope, deliverables, timeline and fee.</span></li>
+          </ol>
+
+          <ul class="channels">
+            <li><a href="mailto:marsellino.nasry@gmail.com?subject=SARM%20Security%20consultation"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><span><span class="channels__name">Email</span><span class="channels__value">marsellino.nasry@gmail.com</span></span></a></li>
+            <li><a href="https://wa.me/201019392651" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg><span><span class="channels__name">WhatsApp</span><span class="channels__value">+20 10 1939 2651</span></span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://www.linkedin.com/in/marsellino-nasry/" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-briefcase"/></svg><span><span class="channels__name">LinkedIn</span><span class="channels__value">in/marsellino-nasry</span></span><span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="assets/docs/SARM-Security-Capability-Statement.pdf" download><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg><span><span class="channels__name">Capability statement</span><span class="channels__value">One-page PDF to share internally</span></span></a></li>
+          </ul>
+        </div>
+
+        <div class="contact__form-wrap">
+          <h3 class="contact__form-title">Tell me about your project</h3>
+          <!-- Formspree endpoint unchanged: submissions are delivered to the configured Gmail inbox -->
+          <form class="form" id="contact-form" action="https://formspree.io/f/xqabqrrl" method="POST" novalidate>
+            <input type="hidden" name="_subject" value="New consultation request from SARM Security website">
+            <div class="form__hp" aria-hidden="true">
+              <label for="hp-field">Leave this field empty</label>
+              <input type="text" id="hp-field" name="_gotcha" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="form__row">
+              <div class="form__field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" autocomplete="name" maxlength="120" required aria-describedby="name-error">
+                <p class="form__error" id="name-error" hidden>Enter your name.</p>
+              </div>
+              <div class="form__field">
+                <label for="company">Company <span class="form__optional">(optional)</span></label>
+                <input type="text" id="company" name="company" autocomplete="organization" maxlength="160">
+              </div>
+            </div>
+            <div class="form__field">
+              <label for="email">Work email</label>
+              <input type="email" id="email" name="email" required autocomplete="email" maxlength="200" aria-describedby="email-error">
+              <p class="form__error" id="email-error" hidden>Enter an email address so I can reply, for example name@company.com.</p>
+            </div>
+            <div class="form__row">
+              <div class="form__field">
+                <label for="service">I'm interested in</label>
+                <select id="service" name="service">
+                  <option value="Not sure yet">Not sure yet, let's talk</option>
+                  <option value="IT audit / ITGC">IT audit / ITGC readiness</option>
+                  <option value="ISO/IEC 27001">ISO/IEC 27001 readiness</option>
+                  <option value="Regulatory compliance (CBE, PDPL, PCI DSS)">Regulatory compliance (CBE, PDPL, PCI DSS)</option>
+                  <option value="Penetration testing">Penetration testing</option>
+                  <option value="Red team / Active Directory assessment">Red team / Active Directory assessment</option>
+                  <option value="Dual-Lens Assessment">Dual-Lens Assessment</option>
+                  <option value="Advisory retainer">Advisory retainer</option>
+                </select>
+              </div>
+              <div class="form__field">
+                <label for="timeline">Timeline <span class="form__optional">(optional)</span></label>
+                <select id="timeline" name="timeline">
+                  <option value="">Choose one</option>
+                  <option value="As soon as possible">As soon as possible</option>
+                  <option value="Within a month">Within a month</option>
+                  <option value="1 to 3 months">1 to 3 months</option>
+                  <option value="Just exploring">Just exploring</option>
+                </select>
+              </div>
+            </div>
+            <div class="form__field">
+              <label for="message">What do you need?</label>
+              <textarea id="message" name="message" required rows="5" maxlength="5000" aria-describedby="message-error" placeholder="For example: our external audit is in March and we want to fix ITGC findings first."></textarea>
+              <p class="form__error" id="message-error" hidden>Write a short message before sending.</p>
+            </div>
+            <div class="form__footer">
+              <button type="submit" class="btn btn--primary btn--lg" id="submit-btn">Request my consultation</button>
+              <p class="form__privacy"><svg class="icon icon--inline" aria-hidden="true"><use href="#i-lock"/></svg>Sent over HTTPS via Formspree. Your details are used only to reply to you. Please don't include passwords or sensitive data here.</p>
+            </div>
+            <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <img src="assets/images/sarm-logo.svg" width="236" height="68" alt="SARM Security" decoding="async">
+        <p>IT audit, compliance and offensive security. Security that passes the audit and survives the attack.</p>
+      </div>
+      <nav class="site-footer__nav" aria-label="Footer">
+        <div>
+          <p class="site-footer__h">Services</p>
+          <ul>
+            <li><a href="#svc-audit">IT Audit &amp; Assurance</a></li>
+            <li><a href="#svc-grc">Compliance &amp; GRC</a></li>
+            <li><a href="#svc-off">Offensive Security</a></li>
+            <li><a href="#dual-lens">Dual-Lens Assessment</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="site-footer__h">Company</p>
+          <ul>
+            <li><a href="#approach">Approach</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#credentials">Credentials</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="site-footer__h">Connect</p>
+          <ul>
+            <li><a href="https://www.linkedin.com/in/marsellino-nasry/" target="_blank" rel="noopener noreferrer">LinkedIn<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://github.com/Marsellino-Nasry" target="_blank" rel="noopener noreferrer">GitHub<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://tryhackme.com/p/Marsellino" target="_blank" rel="noopener noreferrer">TryHackMe<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://linktr.ee/Marsellino.Nasry" target="_blank" rel="noopener noreferrer">Linktree<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="container site-footer__legal">
+      <p>SARM Security is the independent practice of Marsellino Nasry Mounir. It is not affiliated with, endorsed by, or acting on behalf of any current or former employer. Framework and product names belong to their owners and do not imply endorsement.</p>
+    </div>
+    <div class="container site-footer__base">
+      <p>&copy; <span id="year">2026</span> SARM Security. All rights reserved.</p>
+      <a class="to-top" href="#top"><svg class="icon icon--inline" aria-hidden="true"><use href="#i-up"/></svg>Back to top</a>
+    </div>
+  </footer>
+</body>
+</html>
